@@ -1,0 +1,89 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 40%;
+}
+
+
+/* Customize the Next Button */
+.swiper-button-next {
+    background-image: url('/path-to-your-next-icon.svg');
+    /* Replace with your icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    /* Adjust size */
+    height: 40px;
+}
+
+/* Customize the Prev Button */
+.swiper-button-prev {
+    background-image: url('/path-to-your-prev-icon.svg');
+    /* Replace with your icon */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    /* Adjust size */
+    height: 40px;
+}
+
+.custom-prev,
+.custom-next {
+    position: absolute;
+    transform: translateY(-50%, 50%);
+    z-index: 10;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+.custom-prev {
+    left: 46.9%;
+    transform: translateX(-50%);
+    bottom: 0;
+
+    @media (max-width: 640px) {
+        left: 41.9%;
+
+    }
+}
+
+.custom-next {
+    right: 10px;
+    bottom: 0;
+    right: 45%;
+    @media (max-width: 640px) {
+        left: 55.9%;
+
+    }
+    transform: translateX(-50%);
+}
